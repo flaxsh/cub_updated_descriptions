@@ -2,7 +2,10 @@
 
 
 Based on the descriptions created by [Scott Reed et al. Learning Deep Representations of Fine-Grained Visual Descriptions](https://github.com/reedscot/cvpr2016).  
-The descriptions are updated by correcting all misspellings that cause a word to be OOV for the 6B token gloVe embeddings. Misspellings that change one valid word into another were not considered.
+
+These descriptions aim to make the ones from above immediately compatible with a word level model that uses [gloVe embeddigns](https://nlp.stanford.edu/projects/glove/).  
+
+The descriptions are updated by correcting all misspellings that cause a word to be OOV for the [6B token gloVe embeddings](http://nlp.stanford.edu/data/glove.6B.zip). Misspellings that change one valid word into another were not considered.
 
 If you find this version of the descriptions helpful please credit the original authors:
 ```
