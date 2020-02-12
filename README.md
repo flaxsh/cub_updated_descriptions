@@ -4,7 +4,7 @@
 Based on the descriptions created by [Scott Reed et al. Learning Deep Representations of Fine-Grained Visual Descriptions](https://github.com/reedscot/cvpr2016).  
 The descriptions are updated by correcting all misspellings that cause a word to be OOV for the 6B token gloVe embeddings. Misspellings that change one valid word into another were not considered.
 
-If you find this version of the descriptions helpful please credit the original authors (and give a small nod to me) :
+If you find this version of the descriptions helpful please credit the original authors:
 ```
 @inproceedings{reed2016learning, 	
  title = {Learning Deep Representations of Fine-Grained Visual Descriptions,
@@ -13,13 +13,14 @@ If you find this version of the descriptions helpful please credit the original 
  author = {Scott Reed and Zeynep Akata and Bernt Schiele and Honglak Lee},
 }
 ```
+(and give a small nod to me)
 
 Following steps were performed:
 1. Fixed encoding issues that were present in some descriptions
 2. Normalize the text by expanding contractions and separating punctuation with spaces.
 3. Apply substitutions (1111 unique) to replace each misspelled word with the correct one.
 4. Apply some manual changes where errors were not resolveable by replacing one word with another (see ```apply_manual_processing.py```)
-5. Replace "superciliary/ies" with "eyebrow(s)" as the former is not part of gloVe
+5. Replace "superciliary/ies" with "eyebrow(s)" as the former is not part of gloVe (if you'd rather keep it or replace even more words that are specific to bird anatomy, adapt the corresponding section in ```apply_manual_processing.py``` and run that step again)
 
 The resulting descriptions are stored in the ```no_oov_decsriptions.json``` with the other files from that directory being the intermediate results of each fo the processing steps. All files have the structure: ```{image_id -> [list of the ten descriptions for that image id]}```
 
