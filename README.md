@@ -28,7 +28,8 @@ Following steps were performed:
 ### Contents of this Repository
 The python files can be used to run the relabelling.
 
-The resulting descriptions are stored in the ```no_oov_decsriptions.json``` with the other files from that directory being the intermediate results of each fo the processing steps.  
+The resulting descriptions are stored in [updated_dataset/no_oov_descriptions.json](updated_dataset/no_oov_descriptions.json).  
+The other files from that directory are the intermediate results after each processing step.  
 
 All files have the structure: ```{image_id -> [list of the ten descriptions for that image id]}```
 
