@@ -1,0 +1,10 @@
+1. normalize text by adding spaces around punctuation and fix encoding issues and trim whitespace
+2. For all sentences:
+ 2.1 find all OOV
+ 2.2 check if a previous subsititution exists or word is ignored (because it's correctly OOV)
+ 2.3 prompt to fix word
+   2.3.1 if word can't be determined mark it for later inspection
+ 2.4 apply fix and store substitution
+3. find appropriate replacements for bird specific words, invalid words and other irregularities
+4. apply those replacements
+--> nothing is OOV and data is clean.`
