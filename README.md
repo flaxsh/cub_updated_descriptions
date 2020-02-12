@@ -1,6 +1,15 @@
 # Updated Descriptions for the CUB Dataset
 Based on the descriptions collected by/for [Scott Reed et al. Learning Deep Representations of Fine-Grained Visual Descriptions](https://github.com/reedscot/cvpr2016). The descriptions are updated by correcting all misspellings that cause a word to be OOV for the 6B token gloVe embeddings. Misspellings that change one valid word into another were not considered.
 
+If you find this version of the descriptions helpful please credit the original authors (and give a small nod to me :) ) :
+```
+@inproceedings{reed2016learning, 	
+ title = {Learning Deep Representations of Fine-Grained Visual Descriptions,
+ booktitle = {IEEE Computer Vision and Pattern Recognition},
+ year = {2016},
+ author = {Scott Reed and Zeynep Akata and Bernt Schiele and Honglak Lee},
+}
+```
 Following steps were performed:
 1. Fixed encoding issues that were present in some descriptions
 2. Normalize the text by expanding contractions and separating punctuation with spaces.
