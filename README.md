@@ -17,7 +17,7 @@ If you find this version of the descriptions helpful please credit the original 
 }
 ```
 (and give a small nod to me)
-## Changes made
+### Changes made
 Following steps were performed:
 1. Fixed encoding issues that were present in some descriptions
 2. Normalize the text by expanding contractions and separating punctuation with spaces.
@@ -32,7 +32,7 @@ The resulting descriptions are stored in the ```no_oov_decsriptions.json``` with
 
 All files have the structure: ```{image_id -> [list of the ten descriptions for that image id]}```
 
-Additionally, supplying the following files were created during execution of ```fix_descriptions.py``` and document the changes made. They can be also used as a starting point for rerunning the relabelling process. 
+Additionally, the following files were created during execution of ```fix_descriptions.py``` and document the changes made. They can be also used as a starting point for rerunning the relabelling process. 
 
  - ```marked_for_special_processing.json``` contains information on the sentences that could not be repaired by simple substitutions.
  - ```ignored_oovs_during_fixing.json``` specifies a list of words that are not considered OOV during the process.
@@ -49,6 +49,6 @@ To run the relabelling execute ```fix_descriptions.py``` (see its ```--help``` f
  
  
  The interface takes three special inputs:
-  - ```IGN``` adds the word to the list of ignored OOVs it will not be considered OOV going forwared. the list of OOVs will be written as part of the output.
+  - ```IGN``` adds the word to the list of ignored OOVs - it will not be considered OOV going forwared. the list of ignored OOVs will be written as part of the output.
   - ```BLANK``` adds the blank substitution {offending_word} -> "" to the set of substitutions.
-  - the empty string (pressing Enter immediatly) adds the sentence to list of samples that are marked for later inspection
+  - the empty string (pressing Enter immediatly) adds the sentence to list of samples that are marked for later inspection (the list will be written as part of the output).
