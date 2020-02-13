@@ -16,7 +16,7 @@ If you find this version of the descriptions helpful please credit the original 
  author = {Scott Reed and Zeynep Akata and Bernt Schiele and Honglak Lee},
 }
 ```
-(and give a small nod to me)
+(and give a small nod to me and [Franz Rieger](https://github.com/riegerfr))
 ### Changes made
 Following steps were performed:
 1. Fixed encoding issues that were present in some descriptions
