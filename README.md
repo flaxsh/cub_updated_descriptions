@@ -40,6 +40,7 @@ Additionally, the following files were created during execution of ```fix_descri
  - ```substitutions.json``` contains all word substitutions that were applied to the descriptions.
  
 ### Run the Relabelling yourself
+Note: The script expects to have the original data already converted to a json that conforms to our structure ```{image_id -> [list of the ten descriptions for that image id]}```
 To run the relabelling execute ```fix_descriptions.py``` (see its ```--help``` for more information).
 ![Interface used to create substitutions](https://github.com/awfuluncrn/cub_updated_descriptions/raw/master/cubinterface.png)
 
